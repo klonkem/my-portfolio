@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: #f9f9f9;  /* Light background color */
+    padding-top: 100px;
 }
 
 /* Sticky Header */
@@ -14,9 +16,16 @@ header {
     left: 0;
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
     z-index: 1000;
+}
+
+header .profile-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
 }
 
 nav a {
@@ -30,11 +39,65 @@ nav a:hover {
     color: #ffcc00;
 }
 
-/* Sections */
-section {
+/* About Section */
+#about {
+    padding: 150px 20px 20px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#about .section-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Projects Section */
+#projects {
     padding: 100px 20px;
     margin-top: 50px;
     text-align: center;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-top: 10px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
 }
 
 /* Fade-in Animation */
